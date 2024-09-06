@@ -7,7 +7,7 @@ Translucent textures require a bit more work. Check the example for ice to get a
 
 ### Functions
 `return inputColor;` means you're returning the color of the texture without any lighting applied. This is used for making something fully emissive.
-`return apply_partial_emissivity();` means the blocks with that alpha are only partially emissive, tinting it with a specific color of light. You can find a handy link to a table of light colors here: https://minecraft.fandom.com/wiki/Light?file=1.9_lighting_curves_%2528gamma%253D0%2529.png. Remember, colors in OpenGL are formatted as RGB values from 0 to 1!
+`return apply_partial_emissivity();` means the blocks with that alpha are only partially emissive, tinting it with a specific color of light. You can find a handy link to a table of light colors here: https://minecraft.wiki/images/1.9_lighting_curves_%28gamma%3D0%29.png. Remember, colors in OpenGL are formatted as RGB values from 0 to 1!
 `return inputColor * lightColor;` means you're simply returning the texture with its proper lighting. This is the default case.
 
 ### NOTICE
